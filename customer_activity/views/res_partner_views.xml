@@ -41,7 +41,7 @@
             <xpath expr="//field[@name='display_name']" position="after">
                 <field name="activity_followup_count"/>
             </xpath>
-
+            
         </field>
 
     </record>
