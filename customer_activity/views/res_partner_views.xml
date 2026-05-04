@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Declaración XML estándar -->
+<odoo>
+    <!-- Vista formulario cliente -->
+
+    <record id="view_partner_form.uf1889" model="ir.ui.view">
+
+        <field name="name">res.partner.form.uf1889</field>
+
+        <field name="model">res.partner</field>
+
+        <field name="inherit_id" ref="base.view_partner_form"/>
+
+        <!-- Arquitectura XML donde se aplican los cambios -->
+        <field name="arch" type="xml">
+            
+            <!-- XPath para localizar el nodo del formulario -->
+             <xpath expr="//sheet" position="inside">
+                <group string="Activida comercial clientes">
+                    <!-- campo calculado -->
+                     <field name="activity_followup_count" readonly="1"/>
+
+                </group>
+
+             </xpath>
+        </field>
+
+    </record>
+
+
+    <!-- Vista lista (tree) -->
+
+    <record id="view_partner_form.uf1889" model="ir.ui.view">
+
+        <field name="name">res.partner.list.uf1889</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+
+        <!-- Arquitectura XML donde se aplican los cambios -->
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='display_name']" position="after">
+                <field name="activity_followup_count"/>
+            </xpath>
+
+        </field>
+
+    </record>
+
+</odoo>
