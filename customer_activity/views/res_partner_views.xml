@@ -38,7 +38,7 @@
 
         <!-- Arquitectura XML donde se aplican los cambios -->
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='name']" position="after">
+            <xpath expr="//field[@name='complete_name']" position="after">
                 <field name="activity_followup_count"/>
             </xpath>
             
