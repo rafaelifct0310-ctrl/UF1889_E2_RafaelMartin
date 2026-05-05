@@ -16,7 +16,7 @@
             
             <!-- XPath para localizar el nodo del formulario -->
              <xpath expr="//sheet" position="inside">
-                <group string="Activida comercial clientes">
+                <group string="Actividad comercial clientes">
                     <!-- campo calculado -->
                      <field name="activity_followup_count" readonly="1"/>
 
