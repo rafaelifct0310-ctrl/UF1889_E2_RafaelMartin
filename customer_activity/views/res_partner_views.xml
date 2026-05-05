@@ -3,7 +3,7 @@
 <odoo>
     <!-- Vista formulario cliente -->
 
-    <record id="view_partner_form.uf1889" model="ir.ui.view">
+    <record id="view_partner_form_uf1889" model="ir.ui.view">
 
         <field name="name">res.partner.form.uf1889</field>
 
@@ -30,7 +30,7 @@
 
     <!-- Vista lista (tree) -->
 
-    <record id="view_partner_form.uf1889" model="ir.ui.view">
+    <record id="view_partner_list_uf1889" model="ir.ui.view">
 
         <field name="name">res.partner.list.uf1889</field>
         <field name="model">res.partner</field>
@@ -38,7 +38,7 @@
 
         <!-- Arquitectura XML donde se aplican los cambios -->
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='display_name']" position="after">
+            <xpath expr="//field[@name='name']" position="after">
                 <field name="activity_followup_count"/>
             </xpath>
             
